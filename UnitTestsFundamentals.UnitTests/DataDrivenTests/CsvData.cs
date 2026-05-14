@@ -1,7 +1,8 @@
-﻿namespace UnitTestsFundamentals.UnitTests
+﻿namespace UnitTestsFundamentals.UnitTests.DataDrivenTests
 {
     public class CsvData
     {
+        //[MemberData(nameof(CsvData.Data), MemberType = typeof(CsvData))]
         public static IEnumerable<object[]> Data()
         {
             var text = File.ReadAllText("Data.csv");

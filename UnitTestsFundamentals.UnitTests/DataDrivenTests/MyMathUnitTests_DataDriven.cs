@@ -1,11 +1,11 @@
 ﻿using TestNinja.Fundamentals;
 
-namespace UnitTestsFundamentals.UnitTests
+namespace UnitTestsFundamentals.UnitTests.DataDrivenTests
 {
-    public class MyMathUnitTests
+    public class MyMathUnitTests_DataDriven
     {
         [Theory]
-        [MemberData(nameof(CsvData.Data), MemberType = typeof(CsvData))]
+        [TestCustomData]
         public void ShouldReturnSum(int a, int b, int expected)
         {
             // Arrange
