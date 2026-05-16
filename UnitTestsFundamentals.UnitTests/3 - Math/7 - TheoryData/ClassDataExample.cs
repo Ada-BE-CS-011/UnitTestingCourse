@@ -1,11 +1,9 @@
-﻿namespace UnitTestsFundamentals.UnitTests.DataDrivenTests
+﻿namespace UnitTestsFundamentals.UnitTests
 {
-    internal class TestTheoryData : TheoryData<int, int, int>
+    public class TheoryDataExample : TheoryData<int, int, int>
     {
-        // [ClassData(typeof(TestTheoryData))]
-        public TestTheoryData()
+        public TheoryDataExample()
         {
-
             Add(-1, int.MinValue, int.MaxValue);
             Add(1, int.MaxValue, int.MinValue);
             Add(1, 1, 2);

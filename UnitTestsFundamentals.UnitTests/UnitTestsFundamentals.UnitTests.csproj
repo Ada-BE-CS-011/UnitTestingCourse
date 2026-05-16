@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DataDrivenTests\Data.csv">
+    <None Update="3 - Math\8 - External Data (CSV)\Data.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

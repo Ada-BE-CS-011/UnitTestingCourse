@@ -1,11 +1,8 @@
-﻿using System.Reflection;
-using Xunit.Sdk;
-
-namespace UnitTestsFundamentals.UnitTests.DataDrivenTests
+﻿namespace UnitTestsFundamentals.UnitTests
 {
-    public class TestCustomData : DataAttribute
+    internal class MemberData_Method_OtherClass
     {
-        public override IEnumerable<object[]> GetData(MethodInfo testMethod)
+        public static IEnumerable<object[]> Dados()
         {
             yield return new object[] { -1, int.MinValue, int.MaxValue };
             yield return new object[] { 1, int.MaxValue, int.MinValue };
